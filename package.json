@@ -1,0 +1,22 @@
+{
+  "name": "final-project-budget-tracker",
+  "version": "1.0.0",
+  "description": "Group 22 Final project Budget Tracker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "handlebars views/partials/expense.handlebars -f static/expense.js && handlebars views/partials/totalBudget.handlebars -f static/totalBudget.js && handlebars views/partials/totalRemaining.handlebars -f static/totalRemaining.js",
+    "prestart": "npm run build",
+    "dev": "nodemon server.js",
+    "predev": "npm run build",
+    "dev-no-build": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "handlebars": "^4.7.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
