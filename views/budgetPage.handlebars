@@ -1,0 +1,94 @@
+<main class="budget-page">
+
+    <div class="total-section">
+        <div class="budget-display">
+            {{> totalBudget}}
+        </div>
+    </div>
+
+    <div class="budget-button">
+        <div id="set-budget"><a>Set Budget</a></div>
+    </div>
+
+    <div class="add-button">
+        <div id="add-expense-button"><a>Add Expense</a></div>
+    </div>
+
+    <div class="piechart"></div>
+
+    <div class="total-section-opposite">
+        <div class="budget-display-opposite">
+            {{> totalRemaining}}
+        </div>
+    </div>
+
+    <div class="legend hidden"></div>
+
+</main>
+
+<section class="expense-section">
+    <div class="expense-link"><a href="/allExpenses">View All Expenses</a></div>
+</section>
+
+<div id="modal-backdrop" class="hidden"></div>
+<div id="add-expense-modal" class="hidden">
+    <div class="modal-dialog">
+
+        <div class="modal-header">
+            <h3>Add an expense</h3>
+            <button type="button" id="modal-close" class="modal-hide-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+
+            <div class="post-input-element">
+                <label for="post-price-input">Cost ($)</label>
+                <input type="number" id="post-price-input">
+            </div>
+
+            <div class="post-input-element">
+                <label> Category </label>
+                <select class="boxdrop" id="category-dropdown">
+                    <option value="0">Select A Category</option>
+                    <option value="1">Food</option>
+                    <option value="2">Clothing</option>
+                    <option value="3">Entertainment</option>
+                    <option value="4">Bills</option>
+                    <option value="5">Other</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+            {{!-- <button type="button" id="modal-cancel" class="modal-hide-button action-button">Cancel</button> --}}
+            <button type="button" id="modal-accept" class="action-button">Add Expense</button>
+        </div>
+
+    </div>
+</div>
+
+<div id="setting-budget" class="hidden">
+    <div class="modal-dialog">
+
+        <div class="modal-header">
+            <h3>Set The Budget</h3>
+            <button type="button" id="modal-closeb" class="modal-hide-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+
+            <div class="post-input-element">
+                <label for="post-budget-input">Budget ($)</label>
+                <input type="number" id="post-budget-input">
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+            {{!-- <button type="button" id="modal-cancelb" class="modal-hide-button action-button">Cancel</button> --}}
+            <button type="button" id="modal-accept-budget" class="action-button">Set Budget</button>
+        </div>
+
+    </div>
+</div>

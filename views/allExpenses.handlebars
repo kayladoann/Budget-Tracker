@@ -1,0 +1,34 @@
+{{!-- Page to show all expeneses --}}
+
+{{!-- <div class="allow-scroll"> --}}
+    <section>
+        <div class="allExpense-title"><b> OVERALL EXPENSES </b></div>
+    </section>
+
+    <main class="expenseWpage">
+
+        <div class="box">
+            <div class="expense-cate-list">
+                <div class="cateitem ">Category</div>
+                <div class="cateitem">Item Cost</div>
+            </div>
+            
+            <section class="expenseList">
+                {{log "EXPENSE budgetData"}}
+                {{log budgetData}}
+
+                {{#each budgetData}}
+                    {{> expense}}
+                {{/each}}
+            </section>
+            <div class="expense-cate-list" id="border1">
+                <div class="cateitem">End Of List</div>
+        </div>
+        </div>
+
+    </main>
+{{!-- </div> --}}
+
+<div class="home">
+    <div class="home-button"><a href="/"><b>View Main Page</b></a></div>
+</div>
