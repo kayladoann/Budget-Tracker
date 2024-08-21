@@ -4,7 +4,7 @@ Final Project Repo for CS 290 Section 001 - Group 22
 ## Team Members
 * Cameron Rice
 * Brandon Healey
-* Kayla Doann
+* Kayla Doan
 * Reece Morgan
 
 ## Project Description
