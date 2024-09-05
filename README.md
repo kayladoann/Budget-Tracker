@@ -1,11 +1,5 @@
 # CS290-G22: Budget Tracker
-Final Project Repo for CS 290 Section 001 - Group 22
-
-## Team Members
-* Cameron Rice
-* Brandon Healey
-* Kayla Doan
-* Reece Morgan
+Final Group Project Repo for CS 290 Section 001 - Group 22
 
 ## Project Description
 This project is a budget tracker that allows users to set their total budget and add expenses 
